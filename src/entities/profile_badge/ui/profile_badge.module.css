@@ -1,0 +1,16 @@
+.root {
+   display: flex;
+   align-items: center;
+   width: min-content;
+   gap: 5px;
+
+   padding: 3px 10px;
+   border: 1px solid #dedede;
+   border-radius: 5px;
+
+   & .username {
+      display: flex;
+      gap: 5px;
+      font-size: 10px;
+   }
+}

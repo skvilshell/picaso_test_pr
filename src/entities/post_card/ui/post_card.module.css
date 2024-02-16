@@ -1,0 +1,32 @@
+.root {
+   & .card {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      height: 100%;
+      padding: 1rem;
+      border-radius: 10px;
+      border: 1px solid rgb(163, 163, 163);
+      transform: translate(0px, 0px);
+      color: #c9c9c9;
+
+      & .title {
+         white-space: nowrap;
+         overflow: hidden;
+         text-overflow: ellipsis;
+         font-size: 20px;
+
+         & .number {
+            color: #818181;
+         }
+      }
+
+      & .body {
+         white-space: nowrap;
+         overflow: hidden;
+         text-overflow: ellipsis;
+      }
+   }
+
+}

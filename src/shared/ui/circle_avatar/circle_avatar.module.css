@@ -1,0 +1,29 @@
+.root {
+   background: #919191;
+   border-radius: 100%;
+   line-height: 1;
+
+   &.fallback {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   &.sm_size {
+      height: 10px;
+      width: 10px;
+      font-size: 7px;
+   }
+
+   &.md_size {
+      height: 15px;
+      width: 15px;
+      font-size: 12px;
+   }
+
+   &.lg_size {
+      height: 20px;
+      width: 20px;
+      font-size: 16px;
+   }
+}

@@ -1,0 +1,21 @@
+.root {
+
+   display: flex;
+   flex-direction: column;
+   max-height: 90vh;
+   overflow-y: auto;
+   width: 900px;
+
+   & .container {
+      padding: 30px;
+      position: relative;
+
+      & .post_element {
+         width: 800px;
+      }
+   }
+
+   & .loading {}
+
+   & .error {}
+}

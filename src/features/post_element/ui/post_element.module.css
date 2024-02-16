@@ -1,0 +1,25 @@
+.root {
+   position: relative;
+   transition: .3s all ease;
+   width: 100%;
+
+   &:hover {
+      transition: .3s all ease;
+      transform: translate(-6px, -6px);
+
+      & .card {
+         box-shadow: 5px 5px 0 0 #1d1d1d;
+      }
+   }
+
+   & .card {
+      background: #161616;
+   }
+
+   & .badge {
+      position: absolute;
+      left: -7px;
+      bottom: -8px;
+      background: #1d1d1d;
+   }
+}
