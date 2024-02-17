@@ -21,19 +21,25 @@ export function PostList() {
 
 
    if (isLoading) {
-      <div className={s.root}>
-         <h1>
-            <Loading />
-         </h1>
-      </div>
+
+      return (
+         <div className={s.root}>
+            <h1>
+               <Loading />
+            </h1>
+         </div>
+      )
    }
 
    if (isError) {
-      <div className={s.root}>
-         <h1>
-            Ошибка. Пожайлуйста, проверьте соеденеие или повторите позже
-         </h1>
-      </div>
+
+      return (
+         <div className={s.root}>
+            <h1>
+               Ошибка. Пожайлуйста, проверьте соеденеие или повторите позже
+            </h1>
+         </div>
+      )
    }
 
    if (isSuccess) {

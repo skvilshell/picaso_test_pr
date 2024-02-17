@@ -14,19 +14,25 @@ export function PostPage() {
 
 
    if (isLoading) {
-      <div
-         className={s.root}
-      >
-         <Loading />
-      </div>
+      return (
+         <div
+            className={s.root}
+         >
+            <Loading
+               className={s.loading}
+            />
+         </div>
+      )
    }
 
    if (isError) {
-      <div
-         className={s.root}
-      >
-         <h1>Ошибка</h1>
-      </div>
+      return (
+         <div
+            className={s.root}
+         >
+            <h1>Ошибка</h1>
+         </div>
+      )
    }
 
    if (isSuccess)
